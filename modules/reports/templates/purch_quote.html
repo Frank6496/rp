@@ -1,0 +1,144 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<style type="text/css">
+		@page { margin: 2cm }
+		p { margin-bottom: 0.25cm; line-height: 120% }
+		td p { margin-bottom: 0cm }
+	</style>
+</head>
+<body dir="ltr">
+[[purchase_quote_header_begin]]
+<p align="right" style="margin-bottom: 0cm; line-height: 100%">Purchase
+Quote {{quote_number}}</p>
+<p align="right" style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<table width="100%" cellpadding="4" cellspacing="0">
+	<col width="128*">
+	<col width="128*">
+	<tr valign="top">
+		<td width="50%" style="border: none; padding: 0cm">
+			<p align="left">Buy from vendor: {{buy_vendor_name}}</p>
+			<p align="left">Buy from address:{{buy_vendor_address}}</p>
+			<p align="left">Pay to vendor: {{pay_vendor_name}}</p>
+			<p align="left">Pay to address:{{pay_vendor_address}}</p>
+		</td>
+		<td width="50%" style="border: none; padding: 0cm">
+			<p align="right" style="margin-bottom: 0cm"><b>{{company_name}}</b></p>
+			<p align="right"><span style="font-weight: normal">{{company_address}}</span></p>
+		</td>
+	</tr>
+</table>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p align="right" style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<table width="643" cellpadding="4" cellspacing="0">
+	<col width="59">
+	<col width="215">
+	<col width="87">
+	<col width="75">
+	<col width="71">
+	<col width="86">
+	<tr valign="top">
+		<td width="59" style="border: 1px solid #000000; padding: 0.1cm">
+			<p align="center"><b>Type</b></p>
+		</td>
+		<td width="215" style="border: 1px solid #000000; padding: 0.1cm">
+			<p align="center"><b>Description</b></p>
+		</td>
+		<td width="87" style="border: 1px solid #000000; padding: 0.1cm">
+			<p align="center"><b>Quantity</b></p>
+		</td>
+		<td width="75" style="border: 1px solid #000000; padding: 0.1cm">
+			<p align="center"><b>Unit of Mes.</b></p>
+		</td>
+		<td width="71" style="border: 1px solid #000000; padding: 0.1cm">
+			<p align="center"><b>Price</b></p>
+		</td>
+		<td width="86" style="border: 1px solid #000000; padding: 0.1cm">
+			<p align="center"><b>Amount</b></p>
+		</td>
+	</tr>
+</table>
+
+<table width="643" cellpadding="4" cellspacing="0">
+	<col width="59">
+	<col width="215">
+	<col width="87">
+	<col width="75">
+	<col width="71">
+	<col width="86">
+[[purchase_quote_header_end]]
+[[purchase_quote_line_begin]]
+	<tr valign="top">
+		<td width="59" height="17" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000;">
+			<p align="center" style="font-weight: normal">{{type}}</p>
+		</td>
+		<td width="215" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: none; padding-top: 0cm;">
+			<p align="center" style="font-weight: normal">{{Description}}</p>
+		</td>
+		<td width="87" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000;">
+			<p align="center" style="font-weight: normal">{{Quantity}}</p>
+		</td>
+		<td width="75" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000;">
+			<p align="center" style="font-weight: normal">{{uom}}</p>
+		</td>
+		<td width="71" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: none; padding-top: 0cm; ">
+			<p align="center" style="font-weight: normal">{{price}}</p>
+		</td>
+		<td width="86" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; ">
+			<p align="center" style="font-weight: normal">{{amount}}</p>
+		</td>
+	</tr>
+
+[[purchase_quote_line_end]]
+[[purchase_quote_footer_begin]]
+
+	<tr valign="top">
+		<td width="59" height="17" style="border: none; padding: 0cm">
+			<p align="center" style="font-weight: normal"><br/>
+
+			</p>
+		</td>
+		<td width="215" style="border: none; padding: 0cm">
+			<p align="center" style="font-weight: normal"><br/>
+
+			</p>
+		</td>
+		<td width="87" style="border: none; padding: 0cm">
+			<p align="center" style="font-weight: normal"><br/>
+
+			</p>
+		</td>
+		<td width="75" style="border: none; padding: 0cm">
+			<p align="center" style="font-weight: normal"><br/>
+
+			</p>
+		</td>
+		<td width="71" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none;">
+			<p align="center"><b>Total</b></p>
+		</td>
+		<td width="86" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000;">
+			<p align="center" style="font-weight: normal">{{total_amount}}</p>
+		</td>
+	</tr>
+</table>
+<p align="left" style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p align="left" style="margin-bottom: 0cm; line-height: 100%"><span style="font-weight: normal">Shipment
+method: {{shipment_method}}</span></p>
+<p align="left" style="margin-bottom: 0cm; line-height: 100%"><span style="font-weight: normal">Ship
+to address: {{ship_to_address}}</span></p>
+<p align="left" style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+[[purchase_quote_footer_end]]
+</body>
+</html>
